@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SkillNest</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="/images/logo-main.jpg" type="image/x-icon" >
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="mylogo">
+                <div class="logo-circle">
+                    <img src="/images/logo-main.jpg" alt="SkillNest Logo" class="logo-img">
+                </div>
+                <h1 class="logo">SkillNest</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="contact-hero">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? We're here to help!</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        
+             <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name"   required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <p id="formmsg" style="display: none; color: green; font-size: 2rem;"></p>
+                    </div>
+                    <button type="submit" class="submit-btn" >Send Message</button>
+                </form>
+            </div>
+          
+        </section>
+
+
+    <footer>
+               <div class="footer-container">
+                <div class="footer-section">
+                   <h3>SkillNest</h3>
+                   <p>Empowering learners with practical, short-duration courses since 2023.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="contact-infoo">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Education St, Learning City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@SkillNest.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <h3 class="payment-heading">Accepted Payment Methods</h3>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+            <br>
+            <p>&copy; 2023 SkillNest. All rights reserved.</p>
+           
+        </div>
+    </footer>
+
+
+<script src="script.js"></script>
+<script> 
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        var form = document.getElementById('contactForm');
+        var formMsg = document.getElementById('formmsg');
+        formMsg.style.display = 'block';
+        formMsg.style.color = "green";
+        formMsg.style.fontSize = "2rem";
+
+        formMsg.textContent= 'Thank you! Your message has been received.';
+
+        setTimeout(function() {
+            formMsg.style.display = 'none'; 
+            form.reset();
+        }, 5000);
+    });
+
+</script>
+</body>
+
+
+</html>

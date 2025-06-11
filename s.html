@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background Image Slideshow</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #111;
+    }
+
+    .slideshow {
+      width: 80vw;
+      height: 60vh;
+      background-image: url('https://picsum.photos/id/1015/800/500');
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      transition: background-image 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slideshow"></div>
+
+  <script>
+    const slideshowDiv = document.querySelector('.slideshow');
+
+    const images = [
+      'https://picsum.photos/id/1015/800/500',
+      'https://picsum.photos/id/1016/800/500',
+      'https://picsum.photos/id/1018/800/500',
+      'https://picsum.photos/id/1020/800/500'
+    ];
+
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      slideshowDiv.style.backgroundImage = `url('${images[index]}')`;
+    }, 3000); // Change every 3 seconds
+  </script>
+
+</body>
+</html>

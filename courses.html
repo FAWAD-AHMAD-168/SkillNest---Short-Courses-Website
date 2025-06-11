@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - SkillNest</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+    <link rel="stylesheet" href="/stylesheets/courses.css" />
+    <link rel="icon" href="/images/logo-main.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="mylogo">
+          <div class="logo-circle">
+            <img
+              src="/images/logo-main.jpg"
+              alt="SkillNest Logo"
+              class="logo-img"
+            />
+          </div>
+          <h1 class="logo">SkillNest</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="courses-header">
+      <div class="container-bg">
+        <h2>Our Courses</h2>
+        <p>
+          Browse our selection of short courses designed for quick skill
+          acquisition.
+        </p>
+      </div>
+    </section>
+
+    <section class="course-categories">
+      <div class="container">
+        <div class="category-filter">
+          <button class="active" data-category="all">All</button>
+          <button data-category="tech">Technology</button>
+          <button data-category="business">Business</button>
+          <button data-category="design">Design</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses-list">
+      <div class="container">
+        <div class="course-grid">
+          <div class="course-card" data-category="tech">
+            <img src="/images/webdev.jpg" alt="Web Development" />
+            <div class="course-info">
+              <h3>Web Development Fundamentals</h3>
+              <p class="duration">4 weeks</p>
+              <p class="description">
+                Learn HTML, CSS, and JavaScript to build modern websites.
+              </p>
+              <p class="price">$99</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="tech">
+            <img src="/images/pyt.jpg" alt="Python Programming" />
+            <div class="course-info">
+              <h3>Python for Beginners</h3>
+              <p class="duration">6 weeks</p>
+              <p class="description">
+                Master Python programming basics and build your first
+                applications.
+              </p>
+              <p class="price">$129</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="business">
+            <img src="/images/dm.jpg" alt="Digital Marketing" />
+            <div class="course-info">
+              <h3>Digital Marketing Essentials</h3>
+              <p class="duration">5 weeks</p>
+              <p class="description">
+                Learn SEO, social media marketing, and email campaigns.
+              </p>
+              <p class="price">$89</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="design">
+            <img src="/images/gd.jpg" alt="Graphic Design" />
+            <div class="course-info">
+              <h3>Graphic Design Basics</h3>
+              <p class="duration">4 weeks</p>
+              <p class="description">
+                Introduction to design principles and tools like Adobe
+                Photoshop.
+              </p>
+              <p class="price">$79</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="design">
+            <img src="/images/ui.avif" alt="UI/UX Design" />
+            <div class="course-info">
+              <h3>UI/UX Design</h3>
+              <p class="duration">4 weeks</p>
+              <p class="description">
+                Master UI/UX design with HTML: Learn wireframing, prototyping,
+                and responsive web design in one course!
+              </p>
+              <p class="price">$79</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="tech">
+            <img src="/images/cyber.avif" alt="Cybersecurity" />
+            <div class="course-info">
+              <h3>Cybersecurity</h3>
+              <p class="duration">5 weeks</p>
+              <p class="description">
+                Master ethical hacking, network security, and threat defense
+                strategies.
+              </p>
+              <p class="price">$89</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="tech">
+            <img src="/images/flutter.avif" alt="Flutter App Dev" />
+            <div class="course-info">
+              <h3>Flutter App Development</h3>
+              <p class="duration">7 weeks</p>
+              <p class="description">
+                Build cross-platform iOS & Android apps with Flutter and Dart.
+              </p>
+              <p class="price">$109</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="tech">
+            <img src="/images/ai and ml.avif" alt="AI & ML" />
+            <div class="course-info">
+              <h3>AI & Machine Learning</h3>
+              <p class="duration">10 weeks</p>
+              <p class="description">
+                Learn TensorFlow, neural networks, and AI model training from
+                scratch.
+              </p>
+              <p class="price">$149</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="business">
+            <img src="/images/entre.avif" alt="Entrepreneurship" />
+            <div class="course-info">
+              <h3>Entrepreneurship</h3>
+              <p class="duration">6 weeks</p>
+              <p class="description">
+                Turn ideas into successful startups—funding, branding, and
+                scaling strategies.
+              </p>
+              <p class="price">$99</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="business">
+            <img src="/images/finanice.avif" alt="Financial Management" />
+            <div class="course-info">
+              <h3>Financial Management</h3>
+              <p class="duration">5 weeks</p>
+              <p class="description">
+                Learn budgeting, forecasting, and investment strategies to grow
+                your business profits.
+              </p>
+              <p class="price">$97</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="business">
+            <img src="/images/pm.jpg" alt="Project Management" />
+            <div class="course-info">
+              <h3>Project Management Fundamentals</h3>
+              <p class="duration">6 weeks</p>
+              <p class="description">
+                Learn to plan, execute, and deliver projects successfully.
+              </p>
+              <p class="price">$109</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <div class="course-card" data-category="tech">
+            <img src="/images/data.jpg" alt="Data Science" />
+            <div class="course-info">
+              <h3>Data Science Introduction</h3>
+              <p class="duration">8 weeks</p>
+              <p class="description">
+                Explore data analysis, visualization, and basic machine
+                learning.
+              </p>
+              <p class="price">$149</p>
+              <button class="enroll-btn" onclick="enrollAlert()">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>SkillNest</h3>
+          <p>
+            Empowering learners with practical, short-duration courses since
+            2023.
+          </p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul class="contact-infoo">
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 123 Education St, Learning
+              City
+            </li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@SkillNest.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <h3 class="payment-heading">Accepted Payment Methods</h3>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+        </div>
+        <br />
+        <p>&copy; 2023 SkillNest. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="filter.js"></script>
+    <script>
+      function enrollAlert() {
+        confirm("Thank you for choosing SkillNest! We'll contact you soon.");
+      }
+    </script>
+  </body>
+</html>
