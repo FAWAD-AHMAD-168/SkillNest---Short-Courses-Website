@@ -10,7 +10,7 @@
   padding-top: 150px;
   padding-bottom: 180px;
   height: 80vh;
-  transition: background-image 1s ease-in-out;
+  transition: background-image 1s linear;
 }
 
 .hero h2 {
