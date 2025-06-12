@@ -186,6 +186,16 @@ nav ul li a.active {
     
 }
 
+@media (max-width:850px) {
+    .contact-infoo{
+        padding: 0 auto;
+    }
+    
+}
+
+
+
+
 
 
 
@@ -222,6 +232,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     max-width: 1200px;
+    justify-items: center;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -303,18 +314,7 @@ footer {
     margin-top: 15px;
 }
 
-/* .payment-methods img {
-    height: 20px;
-    filter: grayscale(100%) brightness(2);
-    transition: filter 0.3s;
-}
 
-.payment-methods i {
-    filter: grayscale(0) brightness(1);
-}
-.fab fa-cc-mastercard:hover{
-    filter: grayscale(0) brightness(1);
-} */
 
 .payment-methods i {
     font-size: 3rem; /* Controls size (default 2.5rem) */
@@ -343,7 +343,7 @@ footer {
     }
     
     .contact-info {
-        justify-content: center;
+        margin:0 auto;
     }
     
     .footer-social {
