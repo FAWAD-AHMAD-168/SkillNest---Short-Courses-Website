@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Testimonial slider functionality
+  // Testimonial slider
 
   const testimonials = document.querySelectorAll(".testimonial");
   const prevBtn = document.querySelector(".prev");
@@ -32,14 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
     showTestimonial(currentIndex);
   }, 1500);
 
-
-
-
-
-
-
-
-  
   //IMAGE SLIDER
   const heroSection = document.querySelector(".hero");
 
@@ -54,9 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 3. Current image index
   let currentImageIndex = 0;
 
-  // 4. Function to change background
   function changeBackground() {
-    heroSection.style.filter = "grayscale(10%)";
     // Move to next image
     currentImageIndex = (currentImageIndex + 1) % images.length;
 

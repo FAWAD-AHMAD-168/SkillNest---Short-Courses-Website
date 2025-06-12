@@ -1,54 +1,50 @@
-
-
-
 .about-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/about.avif') top/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/about.avif") top/cover no-repeat;
 
-    color: white;
-    text-align: center;
-    padding: 150px 0;
-    padding-bottom:200px;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+  padding-bottom: 200px;
 }
 .about-content {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
-
 .about-hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .about-text {
-    max-width: 800px;
-    margin: 0 auto 50px;
+  max-width: 800px;
+  margin: 0 auto 50px;
 }
 
 .about-text h3 {
-    margin: 25px 0 15px;
-    color: var(--secondary-color);
+  margin: 25px 0 15px;
+  color: var(--secondary-color);
 }
 
 .stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
 }
 
 .stat-item {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .stat-item h4 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
-
 
 @keyframes bounceInfinite {
   0%,
@@ -74,5 +70,3 @@
 .stat-item:nth-child(3) {
   animation-delay: 1s;
 }
-
-
