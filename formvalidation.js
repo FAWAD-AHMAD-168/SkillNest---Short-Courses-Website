@@ -1,34 +1,18 @@
 
-  const form = document.getElementById("contactForm");
-  const formMsg = document.getElementById("formmsg");
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+        var form = document.getElementById('contactForm');
+        var formMsg = document.getElementById('formmsg');
+        formMsg.style.display = 'block';
+        formMsg.style.color = "green";
+        formMsg.style.fontSize = "2rem";
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const subject = document.getElementById("subject").value.trim();
-    const message = document.getElementById("message").value.trim();
+        formMsg.textContent= 'Thank you! Your message has been received.';
 
-    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-    if (!name || !email || !subject || !message) {
-      showMessage("Please fill in all fields.", "red");
-      return;
-    }
-
-    if (!emailPattern.test(email)) {
-      showMessage("That doesn’t look like a valid email.", "red");
-      return;
-    }
-
-    showMessage("Thanks for reaching out! We'll get back to you soon.", "green");
-    form.reset();
-  });
-
-  function showMessage(msg, color) {
-    formMsg.style.display = "block";
-    formMsg.style.color = color;
-    formMsg.textContent = msg;
-  }
+        setTimeout(function() {
+            formMsg.style.display = 'none'; 
+            form.reset();
+        }, 5000);
+    });
 
