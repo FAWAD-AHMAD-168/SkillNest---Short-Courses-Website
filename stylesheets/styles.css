@@ -201,31 +201,19 @@ nav ul li a.active {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer Styles */
 /* Footer Styles */
 footer {
     background-color: #2c3e50;
     color: #ecf0f1;
-    padding: 40px 0 0;
+    padding: 40px 0  0;
     font-size: 14px;
     top:0;
 }
+
+
+
+
 
 .footer-container {
     display: grid;
@@ -233,14 +221,25 @@ footer {
     gap: 30px;
     max-width: 1200px;
     justify-items: center;
+    
     margin: 0 auto;
-    padding: 0 20px;
+    padding-bottom: 20px;
 }
 
-.footer-section {
-    margin-bottom: 30px;
+
+.footer-section:first-child {
+  text-align: center;
 }
 
+.footer-section:first-child .footer-social {
+  justify-content: center;
+}
+
+
+
+
+
+ 
 .footer-section h3, 
 .footer-section h4 {
     color: #fff;
@@ -317,9 +316,9 @@ footer {
 
 
 .payment-methods i {
-    font-size: 3rem; /* Controls size (default 2.5rem) */
-    width: 60px;     /* Fixed width */
-    height: 40px;    /* Fixed height */
+    font-size: 3rem; 
+    width: 60px;     
+    height: 40px;    
     display: inline-flex;
     align-items: center;
     justify-content: center;
