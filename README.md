@@ -42,7 +42,7 @@ Includes a styled contact form with validation and thank-you message.
 ---
 
 ## 🌐 Live Demo  
-👉 [SkillNest on Netlify](https://skillnest-shortcourses.netlify.app/)
+👉 [SkillNest-Short Courses Website](https://skillnest-shortcourses.netlify.app/)
 
 ---
 
