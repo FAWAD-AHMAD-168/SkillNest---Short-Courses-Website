@@ -159,9 +159,22 @@ nav ul li a.active {
 
 
 
-/* Responsive adjustment */
+
+
+
+/* ADDING  A  HAMBURGER MENU  */
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Mobile Menu */
 @media (max-width: 768px) {
-    .logo-circle {
+
+.logo-circle {
         width: 40px;
         height: 40px;
     }
@@ -174,17 +187,51 @@ nav ul li a.active {
     .logo {
         font-size: 1.5rem;
     }
-    
-    nav  {
-        display: none;
-    }
-    .hamburger{
-        display: block;
-        color:#1a252f;
-        font-size: 1.5rem;
-    }
-    
+
+
+
+  nav ul {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 70px;
+    right: 20px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 15px;
+    z-index: 1000;
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+  }
+
+  nav ul.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hamburger {
+    display: block;
+    user-select: none;
+  }
+
+  /* Change ☰ to ✖ (X) when active */
+  .hamburger.active::before {
+    content: "✖";
+  }
+
+  .hamburger::before {
+    content: "☰";
+    display: inline-block;
+    transition: content 0.3s ease;
+  }
 }
+
+
+
+
+
 
 @media (max-width:850px) {
     .contact-infoo{
