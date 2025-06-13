@@ -1,4 +1,4 @@
-SkillNest - Short Course Website
+SkillNest - Short Courses Website
 
 SkillNest is a responsive, multi-page website that offers short, practical courses for learners. The website is fully built with HTML, CSS, and JavaScript, emphasizing interactivity and modern design principles.
 
